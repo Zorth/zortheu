@@ -5,25 +5,11 @@ body {
 }
 
 body {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-
-  background: linear-gradient(to bottom right, #444444, #009a5b);
-  font-size: 1.5rem;
+  background: #000000;
 }
 
 main {
-  color: #fff6d5;
-  font-family: sans-serif;
-  text-align: center;
+  color: #ffffff;
 }
 
-.logo {
-  height: 20em;
-}
 
-h1 + .subtitle {
-  display: block;
-  margin-top: -1em;
-}
