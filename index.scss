@@ -1,3 +1,34 @@
+// greytones dark (0) -> light (9)
+$neutral0: #1f2335;
+$neutral1: #24283b;
+$neutral2: #292e42;
+$neutral3: #3b4261;
+$neutral4: #414868;
+$neutral5: #545c7e;
+$neutral6: #565f89;
+$neutral7: #737aa2;
+$neutral8: #a9b1d6;
+$neutral9: #c0caf5;
+
+// blues dark (0) -> light (4)
+$blue0: #394b70;
+$blue1: #3d59a1;
+$blue2: #7aa2f7;
+$blue3: #7dcfff;
+$blue4: #b4f9f8;
+
+// accent colors
+$purple-light: #bb9af7;
+$purple-dark: #9d7cd8;
+$orange-light: #ffc777;
+$orange-dark: #ff9e64;
+$green-light: #4fd6be;
+$green-dark: #41a6b5;
+$red-light: #ff757f;
+$red-dark: #c53b53;
+$lime: #c3e88d;
+$magenta: #ff007c;
+
 html,
 body {
   height: 100%;
@@ -5,11 +36,11 @@ body {
 }
 
 body {
-  background: #000000;
+  background: #{$neutral0};
 }
 
 main {
-  color: #ffffff;
+  color: #{$neutral9};
 }
 
 
