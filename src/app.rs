@@ -35,9 +35,9 @@ pub fn App() -> Html {
         <main>
             <div class={classes!{"foreground"}}>
                 <NavElement />
-                <BrowserRouter>
+                <HashRouter>
                     <Switch<Route> render={switch} />
-                </BrowserRouter>
+                </HashRouter>
             </div>
             <Background />
         </main>
