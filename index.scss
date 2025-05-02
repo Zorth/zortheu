@@ -63,28 +63,36 @@ main {
 .bg-blurry-1 {
   width: 30vmax;
   height: 40vmax;
-  background: #{$blue1};
+  background: #{$purple-dark};
   position: fixed;
   left: 70%;
   top: 10%;
-  border-radius: 20rem;
+  border-radius: 30vmax;
   filter: blur(100vmax);
   scale: 2;
-  opacity: .2;
+  opacity: .3;
+  mix-blend-mode: color-dodge;
   rotate: 30deg;
+  animation: slowspin 35s infinite ease-in-out;  
 }
 
 .bg-blurry-2 {
-  width: 60vmax;
-  height: 40vmax;
-  background: #{$neutral4};
+  width: 50vmax;
+  height: 20vmax;
+  background: #{$blue1};
   position: fixed;
   left: -10%;
   top: -10%;
-  border-radius: 40rem;
+  border-radius: 20vmax;
   filter: blur(100vmax);
   scale: 2;
-  opacity: 0.2;
-  rotate: 50deg;
+  opacity: 0.4;
+  mix-blend-mode: color-dodge;
+  rotate: 20deg;
+  animation: slowspin 25s infinite ease-in-out reverse;  
+}
+
+@keyframes slowspin {
+  50% {transform: rotate(90deg);}
 }
 
