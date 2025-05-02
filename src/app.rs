@@ -1,6 +1,7 @@
 use yew::prelude::*;
 use yew_router::prelude::*;
 
+use crate::components::background::Background;
 use crate::components::navelement::NavElement;
 use crate::pages::home::HomePage;
 use crate::pages::space_trade::SpaceTrader; 
@@ -32,11 +33,13 @@ pub fn App() -> Html {
 
     html! {
         <main>
-            <NavElement />
-            <BrowserRouter>
-
-            <Switch<Route> render={switch} />
-            </BrowserRouter>
-            </main>
+            <div class={classes!{"foreground"}}>
+                <NavElement />
+                <BrowserRouter>
+                    <Switch<Route> render={switch} />
+                </BrowserRouter>
+            </div>
+            <Background />
+        </main>
     }
 }

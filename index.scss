@@ -31,7 +31,7 @@ $magenta: #ff007c;
 
 html,
 body {
-  height: 100%;
+  // height: 100%;
   margin: 0;
 }
 
@@ -43,4 +43,48 @@ main {
   color: #{$neutral9};
 }
 
+// components
+.foreground {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.bg-blurry-1 {
+  width: 30vmax;
+  height: 40vmax;
+  background: #{$blue1};
+  position: fixed;
+  left: 70%;
+  top: 10%;
+  border-radius: 20rem;
+  filter: blur(100vmax);
+  scale: 2;
+  opacity: .2;
+  rotate: 30deg;
+}
+
+.bg-blurry-2 {
+  width: 60vmax;
+  height: 40vmax;
+  background: #{$neutral4};
+  position: fixed;
+  left: -10%;
+  top: -10%;
+  border-radius: 40rem;
+  filter: blur(100vmax);
+  scale: 2;
+  opacity: 0.2;
+  rotate: 50deg;
+}
 
