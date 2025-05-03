@@ -43,6 +43,11 @@ main {
   color: #{$neutral9};
 }
 
+// fx
+.inside-part {
+  box-shadow: #{$neutral1} 0px 30px 60px -12px inset, #{$neutral0} 0px 18px 36px -18px inset;
+}
+
 // components
 .foreground {
   position: fixed;
@@ -96,3 +101,28 @@ main {
   50% {transform: rotate(90deg);}
 }
 
+.nav_element {
+  width: 6rem;
+  position: fixed;
+  right: -5rem;
+  background: #{$neutral5}15;
+  backdrop-filter: blur(1rem);
+  border-radius: 2.5rem 0 0 2.5rem;
+  top: 10%;
+  height: fit-content;
+  display: flex;
+  transition: ease-in-out .5s;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav_element:hover {
+  right: -1rem;
+}
+
+.nav_btn_container {
+  padding: 1rem;
+  width: 3rem;
+  height: 3rem;
+  // background: blue;
+}

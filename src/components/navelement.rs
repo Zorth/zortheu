@@ -3,9 +3,10 @@ use yew::prelude::*;
 #[function_component]
 pub fn NavElement() -> Html {
     return html!(
-        <>
-        <h1>{"TEst"}</h1>
-        </>
+        <div class={classes!("nav_element", "inside-part")}>
+            <div class={classes!("nav_btn_container")} />
+            <div class={classes!("nav_btn_container")} />
+        </div>
     )
 }
 
