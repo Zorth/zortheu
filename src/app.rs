@@ -9,7 +9,7 @@ use crate::pages::space_trade::SpaceTrader;
 use gloo::console::log;
 
 #[derive(Debug, Clone, Copy, PartialEq, Routable)]
-enum Route {
+pub enum Route {
     #[at("/")]
     Home,
     #[at("/SpaceTrader")]
@@ -35,9 +35,9 @@ pub fn App() -> Html {
         <main>
             <div class={classes!{"foreground"}}>
                 <NavElement />
-                <BrowserRouter>
+                <HashRouter>
                     <Switch<Route> render={switch} />
-                </BrowserRouter>
+                </HashRouter>
             </div>
             <Background />
         </main>
