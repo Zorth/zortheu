@@ -56,6 +56,13 @@ main {
 
 // general stylings
 .button {
+  display: inherit;
+  width: 100%;
+  height: 100%;
+  background: #{$neutral6};
+  border-radius: 40%;
+  box-shadow: #{$neutral1} 0px 1px 3px, #{$neutral0}  0px 1px 2px;
+  transition: .1s;
 }
 
 .button:link, .button:visited {
@@ -65,6 +72,15 @@ main {
 }
 
 .button:active {
+  box-shadow: #{$neutral0} 0px 1px 3px, #{$neutral0}  0px 1px 2px, #{$neutral1} 0px 30px 60px -12px inset, #{$neutral0} 0px 18px 36px -18px inset;
+}
+
+.button img, .button svg {
+  width: 80%;
+  height: 80%;
+  color: #{$neutral9};
+  fill: #{$neutral9};
+  margin: 10%;
 }
 
 // fx
@@ -126,9 +142,9 @@ main {
 }
 
 .nav_element {
-  width: 6rem;
+  width: fit-content;
   position: fixed;
-  right: -5rem;
+  right: -3rem;
   background: #{$neutral5}15;
   backdrop-filter: blur(1rem);
   border-radius: 2.5rem 0 0 2.5rem;
@@ -146,7 +162,7 @@ main {
 
 .nav_btn_container {
   padding: 1rem;
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   // background: blue;
 }
