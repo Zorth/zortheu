@@ -9,7 +9,7 @@ use crate::pages::space_trade::SpaceTrader;
 use gloo::console::log;
 
 #[derive(Debug, Clone, Copy, PartialEq, Routable)]
-enum Route {
+pub enum Route {
     #[at("/")]
     Home,
     #[at("/SpaceTrader")]
