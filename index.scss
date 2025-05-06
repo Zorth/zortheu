@@ -74,6 +74,7 @@ main {
 }
 
 .button:hover {
+  background: #{$neutral7};
 }
 
 .button:active {
@@ -155,7 +156,7 @@ main {
   border-radius: 2.5rem 0 0 2.5rem;
   top: 10%;
   height: fit-content;
-  display: flex;
+  // display: flex;
   transition: ease-in-out .5s;
   flex-direction: column;
   align-items: center;
@@ -168,7 +169,8 @@ main {
 }
 
 .nav_btn_container {
-  padding: 1rem;
+  // padding: 1rem;
+  margin: 1rem;
   width: 3.5rem;
   height: 3.5rem;
   // background: blue;
