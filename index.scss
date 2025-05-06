@@ -1,3 +1,6 @@
+
+// ---- variables ---- //
+
 // greytones dark (0) -> light (9)
 $neutral0: #1f2335;
 $neutral1: #24283b;
@@ -38,6 +41,8 @@ $magenta: #ff007c;
   font-family: "Mono";
   src: url("media/Mono.ttf");
 }
+
+// ---- stylings  ---- //
 
 html,
 body {
@@ -154,6 +159,8 @@ main {
   transition: ease-in-out .5s;
   flex-direction: column;
   align-items: center;
+
+  z-index: 1500;
 }
 
 .nav_element:hover {
