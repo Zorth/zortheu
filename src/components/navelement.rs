@@ -9,7 +9,7 @@ pub fn NavElement() -> Html {
                 <NavBtn icon="house" dest="" />
             </div>
             <div class={classes!("nav_btn_container")}>
-                <NavBtn icon="ship" dest="SpaceTrader" />
+                <NavBtn icon="rocket" dest="SpaceTrader" />
             </div>
         </div>
     );
