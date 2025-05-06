@@ -173,3 +173,76 @@ main {
   height: 3.5rem;
   // background: blue;
 }
+
+// pages
+
+.st{
+  margin: auto;
+  width: 100%;
+  max-width: 100rem;
+  height: 100%;
+
+  font-family: "Mono", monospace;
+  transition: .1s;
+
+}
+
+.st * {
+  transition: .1s;
+  z-index: 500;
+}
+
+.st-header{
+  @extend .inside-part;
+  width: calc(100% - 2rem);
+  height: 5rem;
+  margin: 1rem;
+  background: #{$neutral2}80;
+  border-radius: 1.5rem;
+}
+.st-body{
+  width: 100%;
+  height: calc(100% - 7rem);
+  display: flex;
+  // gap: 1rem;
+}
+.st-left-sidebar{
+  width: 20rem;
+  height: 98%;
+  margin: 0 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1;
+}
+.st-sidebar-comp{
+  @extend .inside-part;
+  background: #{$neutral2}80;
+  border-radius: 1.5rem;
+  height: calc((100% - 2rem)/3);
+  width: 100%;
+}
+.st-main{
+  margin: 0 1rem 1rem 0;
+  flex: 2;
+
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.st-main-top{
+  @extend .inside-part;
+  border-radius: 1.5rem;
+  background: #{$neutral2}80;
+
+  flex: 3;
+}
+.st-main-bot{
+  @extend .inside-part;
+  border-radius: 1.5rem;
+  background: #{$neutral2}80;
+
+  flex: 1;
+}
