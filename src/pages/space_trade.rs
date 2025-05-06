@@ -6,6 +6,7 @@ pub fn SpaceTrader() -> Html {
 
     return html!{
         <div class={classes!{"st"}}>
+            <div class={classes!{"st-blur"}}/>
             <div class={classes!{"st-header"}}>
             </div>
             <div class={classes!{"st-body"}}>

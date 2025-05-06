@@ -179,6 +179,9 @@ main {
 // pages
 
 .st{
+  position: absolute;
+  left: 0;
+  right: 0;
   margin: auto;
   width: 100%;
   max-width: 100rem;
@@ -193,7 +196,14 @@ main {
   transition: .1s;
   z-index: 500;
 }
+.st-blur {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
 
+  backdrop-filter: blur(.8rem);
+  z-index: 990;
+}
 .st-header{
   @extend .inside-part;
   width: calc(100% - 2rem);
